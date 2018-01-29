@@ -74,6 +74,15 @@ class UsersController < ApplicationController
     ContactmailerMailer.notify_scott(params).deliver_now
     redirect_to root_path
   end
+
+  def download_pdf
+    send_file(
+      "#{Rails.root}/public/coolcat.jpeg",
+      filename: "coolcat.jpeg",
+      type: "image/jpeg"
+    )
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user

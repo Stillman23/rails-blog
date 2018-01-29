@@ -1,10 +1,11 @@
 class CommentsController < ApplicationController
-  before_action :set_post
+  before_action :verify_admin, only: [:index]
+  before_action :set_post, except: [:create, :index]
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.all
+    @comments = Comment.where(message_type: 'contact')
   end
 
   # GET /comments/1
@@ -24,7 +25,14 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = @post.comments.new(comment_params)
+    byebug
+    if params[:message_type] == 'comment'
+      @post = Post.find(params[:post_id])
+
+      @comment = @post.comments.new(comment_params)
+    else
+      @comment = Comment.new(comment_params)
+    end
 
     respond_to do |format|
       if @comment.save
@@ -62,17 +70,24 @@ class CommentsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_comment
-      @comment = Comment.find(params[:id])
-    end
 
-    def set_post
-      @post = Post.find(params[:post_id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_comment
+    @comment = Comment.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def comment_params
-      params.require(:comment).permit(:name, :body, :post_id)
-    end
+  def set_post
+    @post = Post.find(params[:post_id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def comment_params
+    params.require(:comment).permit(
+      :name, :body, :post_id, :message_type, :email, :subject, :phone
+    )
+  end
+
+  def verify_admin
+    redirect_to login_path unless logged_in?
+  end
 end

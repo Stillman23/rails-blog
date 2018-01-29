@@ -66,7 +66,8 @@ class UsersController < ApplicationController
   end
 
   def contact
-    render 'users/contact'
+    @comment = Comment.new(message_type: 'contact')
+    render 'comments/contact'
   end
 
   def send_message

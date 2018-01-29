@@ -18,6 +18,7 @@
           </ul>
         </div>
       <% end %>
+      <%= f.hidden_field :message_type, value:'comment', class:'form-control' %>
       <%= f.label :name %><br>
       <%= f.text_field :name %><br>
       <div class:"comment-section">
@@ -28,7 +29,7 @@
       <div class="actions">
         <%= f.submit %>
       </div>
-    <% end %>
+  <% end %>
     
   <br>
   <div class="comments-area">

@@ -3,7 +3,10 @@ class CreateComments < ActiveRecord::Migration[5.0]
     create_table :comments do |t|
       t.string :name, null: false
       t.text :body, null: false
-      t.references :post
+      t.string :email
+      t.string :subject
+      t.string :phone
+      t.string :message_type
 
       t.timestamps
     end

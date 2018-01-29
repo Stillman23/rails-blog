@@ -5,7 +5,8 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.where(message_type: 'contact')
+    @contacts = Comment.where(message_type: 'contact')
+    @subs = Comment.where(message_type: [nil, 'subscribe'])
   end
 
   # GET /comments/1

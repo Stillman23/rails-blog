@@ -25,7 +25,6 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    byebug
     if params[:message_type] == 'comment'
       @post = Post.find(params[:post_id])
 

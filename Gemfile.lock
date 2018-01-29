@@ -41,11 +41,14 @@ GEM
     arel (7.1.4)
     autoprefixer-rails (7.2.5)
       execjs
+    bcrypt (3.1.11)
     bindex (0.5.0)
     bootstrap (4.0.0)
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.9, < 2)
       sass (>= 3.5.2)
+    bootstrap-navbar (3.0.0)
+      gem_config (~> 0.3)
     builder (3.2.3)
     byebug (9.1.0)
     climate_control (0.2.0)
@@ -62,11 +65,16 @@ GEM
     contact_us (1.0.1)
       rails (>= 4.2.0)
     crass (1.0.3)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
     font-awesome-rails (4.7.0.1)
       railties (>= 3.2, < 5.1)
+    gem_config (0.3.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.1)
@@ -129,6 +137,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_bootstrap_navbar (3.0.0)
+      bootstrap-navbar (~> 3.0)
+      rails (>= 3.0.0)
     railties (5.0.6)
       actionpack (= 5.0.6)
       activesupport (= 5.0.6)
@@ -187,10 +198,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootstrap (~> 4.0.0.beta3)
   byebug
   coffee-rails (~> 4.2)
   contact_us (~> 1.0.1)
+  dotenv-rails
   font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
@@ -200,6 +213,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.6)
+  rails_bootstrap_navbar
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)

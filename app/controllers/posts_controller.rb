@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
     before_action :find_post, only: [:show, :edit, :update , :destroy]
+    before_action :verify_admin, only: [:new, :create, :edit, :update, :destroy]
     def index
     end
 
@@ -46,5 +47,9 @@ class PostsController < ApplicationController
 
     def find_post
         @post = Post.find(params[:id])
+    end
+
+    def verify_admin
+       redirect_to login_path unless logged_in?
     end
 end

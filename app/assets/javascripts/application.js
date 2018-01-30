@@ -16,6 +16,8 @@
 //= require wow
 //= require bootstrap-sprockets
 //= require menumaker
+//= require parallax
+//= require jquery.parallax
 //= require menumaker.min
 //= require jquery.sticky
 //= require back-to-top

@@ -2721,7 +2721,7 @@ label { }
    ----------------------*/
 
 .logo { }
-.header { background-color: #fff; z-index: 9999; position: relative; padding-top: 20px; padding-bottom: 20px; }
+.header { background-color: #fff; z-index: 9999; position: relative; padding-top: 55px; padding-bottom: 36px; }
 .top-text { text-align: right; }
 .top-text .text-block { padding-left: 20px; color: #fff; line-height: 18px; }
 .call-block { }
@@ -2740,19 +2740,19 @@ label { }
 .hero-title { font-size: 46px; color: #fff; line-height: 58px; font-weight: 600; margin-bottom: 30px; letter-spacing: -1px; }
 .hero-text { font-size: 18px; color: #fff; margin-bottom: 30px; }
 .navigation { float: right; }
-.is-sticky .header {border-bottom: 1px solid #eae7e2;}
-#navigation, #navigation ul, #navigation ul li, #navigation ul li a, #navigation #menu-button { margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-#navigation:after, #navigation > ul:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-#navigation #menu-button { display: none; }
-#navigation { font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
-#navigation > ul > li { float: left; }
-#navigation.align-center > ul { font-size: 0; text-align: center; }
-#navigation.align-center > ul > li { display: inline-block; float: none; }
-#navigation.align-center ul ul { text-align: left; }
-#navigation.align-right > ul > li { float: right; }
-#navigation > ul > li > a { padding: 20px; font-size: 13px; color: #18150d; text-decoration: none; font-weight: 500; text-transform: uppercase; }
-#navigation > ul > li:hover > a { color: #ffffff; background-color: #aa9144; }
-#navigation > ul > li.has-sub > a { padding-right: 32px; }
+.is-sticky .header{border-bottom: 1px solid #eae7e2;}
+.navigation, #navigation ul, .navigation ul li, .navigation ul li a, .navigation #menu-button { margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.navigation:after, .navigation > ul:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.navigation #menu-button { display: none; }
+.navigation { font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
+.navigation > ul > li { float: left; }
+.navigation.align-center > ul { font-size: 0; text-align: center; }
+.navigation.align-center > ul > li { display: inline-block; float: none; }
+.navigation.align-center ul ul { text-align: left; }
+.navigation.align-right > ul > li { float: right; }
+.navigation > ul > li > a { padding: 20px; font-size: 13px; color: #18150d; text-decoration: none; font-weight: 500; text-transform: uppercase; }
+.navigation > ul > li:hover > a { color: #ffffff; background-color: #aa9144; }
+.navigation > ul > li.has-sub > a { padding-right: 32px; }
 
 /*#navigation > ul > li.has-sub > a:after {
  position: absolute;
@@ -2799,7 +2799,7 @@ label { }
 #navigation.small-screen ul ul li:hover > a, #navigation.small-screen ul ul li.active > a { color: #474747; }
 #navigation.small-screen ul ul, #navigation.small-screen ul ul ul, #navigation.small-screen.align-right ul ul { position: relative; left: 0; width: 100%; margin: 0; text-align: left; }
 #navigation.small-screen > ul > li.has-sub > a:after, #navigation.small-screen > ul > li.has-sub > a:before, #navigation.small-screen ul ul > li.has-sub > a:after, #navigation.small-screen ul ul > li.has-sub > a:before { display: none; }
-#navigation.small-screen #menu-button {display: block; padding: 15px; color: #474747; cursor: pointer; font-size: 12px;
+#navigation.small-screen .menu-button {display: block; padding: 15px; color: #474747; cursor: pointer; font-size: 12px;
    text-transform: uppercase; font-weight: 700; }
 #navigation.small-screen #menu-button:after { position: absolute; top: 16px; right: 17px; display: block; height: 12px; width: 20px; border-top: 2px solid #474747; border-bottom: 2px solid #474747; content: ''; }
 #navigation.small-screen #menu-button:before { position: absolute; top: 21px; right: 17px; display: block; height: 2px; width: 20px; background: #474747; content: ''; }
@@ -3378,7 +3378,7 @@ justify-content: center;
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: white;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;

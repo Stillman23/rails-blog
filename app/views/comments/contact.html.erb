@@ -1,0 +1,122 @@
+<!-- <section class="home" id="home" data-stellar-background-ratio="0.4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="st-home-unit">
+                                <div class="hero-txt">
+                                    <p class="hero-work">I am here to build. To Create.</p>
+                                    <h2 class="hero-title">Lets build something Together!</h2>
+                                    <!-- <p class="hero-sub-title">We Provide Hight Quality Bootstrap Template</p> -->
+                                    <!-- <a href="#" class="btn btn-default btn-lg left-btn">Purchase Now</a> -->
+                                    
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mouse-icon"><div class="wheel"></div></div>
+                        </section>
+    <!-- <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-caption">
+                        <h2 class="page-title">Contact</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div><!-- col-md-8 -->
+</div>
+</header>
+</div> -->
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="widget widget-contact">
+          <!-- widget search -->
+          <h3 class="widget-title">Contact Info</h3>
+          <address>
+            <strong>Scott Tillman</strong>
+            <br> Chicago, IL
+            
+            <br>
+            <abbr title="Phone">C:</abbr> 708.539.7937
+          </address>
+          <address>
+            <strong>Contact Name</strong>
+            <br>
+            <a href="mailto:#">Scotttillman23@gmail.com</a>
+          </address>
+        </div>
+        <!-- /.widget search -->
+        <div class="widget widget-social">
+          <div class="social-circle">
+            <a href="#" class="#"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="#"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="#"><i class="fa fa-youtube-play"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1>Contact Form</h1>
+            <p> Please complete the form below. We'll do everything we can to respond to you as quickly as possible.</p>
+
+
+
+            <%= form_for @comment, :html => {:id => "contact-form"} do |f| %>          
+              <%= f.hidden_field :message_type, value:'contact', class:'form-control' %>                        
+              <div class="row">
+                <div class="col-md-6">
+                  <label class="control-label" for="name">name</label>
+                  <%= f.text_field :name, class:'form-control' %>
+                  <br>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-md-6">
+                  <label class="control-label" for="phone">phone</label>
+                  <%= f.text_field :phone, class:'form-control' %>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-md-6">
+                  <label class="control-label" for="email">email</label>
+                  <%= f.text_field :email, class:'form-control' %>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-md-6">
+                  <label class="control-label" for="Subject">Subject</label>
+                  <%= f.text_field :subject, class:'form-control' %>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <label class="control-label" for="textarea">Message</label>
+                    <%= f.text_area :body, class:'form-control', rows:'6' %>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <%= f.submit 'send message', id: 'singlebutton', name:'singlebutton', class:'btn btn-default' %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

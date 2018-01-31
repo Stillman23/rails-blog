@@ -2,158 +2,150 @@
 <html>
   <head>
   <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scott Tillman | Web Developer </title>
-    <!-- Bootstrap -->
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <!-- Font Awesome -->
-    <!-- Style -->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Scott Tillman | Web Developer </title>
+      <!-- Bootstrap -->
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      <!-- Font Awesome -->
+      <!-- Style -->
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   
     <link href="app/assets/javascripts/menumaker.js>
     <link href="app/assets/javascripts/menumaker.min.js>
     <link href="app/assets/javascripts/jquery.sticky.js>
     <link href="vendor/assets/javascripts/back-to-top.js>
-    
   </head>
 
   <body>
 
-  <!-- Navigation -->
-  <div class="header">
-  <div class="container">
-  <div class="row">
-  <nav class="navbar navbar-expand-lg navbar-white fixed-top" id="mainNav">
-    
-    <div id="Logotitle"><h1>SC<span style="color:#a31b1b;">O</span>TT<span style="color:#a31b1b;"> T</span>ILLMA<span style="color:#36ab9f;">N</span></h1></div>
-   <div id= 'menu-button'>  
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
+    <!-- Navigation -->
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-white fixed-top" id="mainNav">
+            <div id="Logotitle"><h1>SC<span style="color:#a31b1b;">O</span>TT<span style="color:#a31b1b;"> T</span>ILLMA<span style="color:#36ab9f;">N</span></h1></div>
+            <div id= 'menu-button'>  
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                  <i class="fa fa-bars"></i>
+                </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                
+                <div class="navigation">
+                                  
+                
+                  <ul class="navbar-nav text-uppercase ml-auto">
+                  
+                  <li class="active">
+                  <%= link_to 'Home', root_path %>
+              </li>
+              <li>
+              <%= link_to 'About', about_path %>
+              </li>
+              <li>
+              <%= link_to 'Blog', posts_path %>
+            </li>
+            <li>
+              <%= link_to 'Portfolio', portfolios_path %>
+            </li>
+            <li>
+              <%= link_to 'Contact', contact_path %>
+            </li>
+                  </ul>
+                </div>
+                
+                  
+                </div>
+                </div>
+          
+          </nav>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+    </div>
       
-      <div class="navigation">
-                        
-      
-        <ul class="navbar-nav text-uppercase ml-auto">
-        
-        <li class="active">
-        <%= link_to 'Home', root_path %>
-    </li>
-    <li>
-     <%= link_to 'About', about_path %>
-    </li>
-    <li>
-    <%= link_to 'Blog', posts_path %>
-   </li>
-   <li>
-    <%= link_to 'Portfolio', portfolios_path %>
-   </li>
-   <li>
-    <%= link_to 'Contact', contact_path %>
-   </li>
-        </ul>
-      </div>
-      
-        
-      </div>
-      </div>
-  
-  </nav>
-  </div>
-  </div>
-  </div>
-  
-
-  
-
-    
-
-    
-
     <%= yield %>
-                                    
-                                        
-                                        <div class="footer">
-                                            <!-- footer-->
-                                            <div class="container">
-                                                <div class="footer-block">
-                                                    <!-- footer block -->
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                                            <div class="footer-widget">
-                                                                <h2 class="widget-title">Scott Tillman</h2>
-                                                                <ul class="listnone contact">
-                                                                    <li><i class="fa fa-map-marker"></i> Chicago, IL </li>
-                                                                    <li><i class="fa fa-phone"></i> 708.539.7937</li>
-                                                  
-                                                                    <li><i class="fa fa-envelope-o"></i> Scotttillman23@gmail.com</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                                            <div class="footer-widget footer-social">
-                                                                <!-- social block -->
-                                                                <h2 class="widget-title">Social Feed</h2>
-                                                                <ul class="listnone">
-                                                                    
-                                                                    <li><a href="https://github.com/Stillman23"><i class="fa fa-github"></i> GitHub</a></li>
-                                                                    
-                                                                    <li><a href="https://www.linkedin.com/in/scott-tillman-7300838b/"><i class="fa fa-linkedin"></i> Linked In</a></li>
-                                                                    <li>
-                                                                        <a href="https://www.instagram.com/___s.c.o.t.t___/"> <i class="fa fa-instagram"></i>Instagram</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <!-- /.social block -->
-                                                        </div>
-                                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                                                            <div class="footer-widget widget-newsletter">
-                                                                <!-- newsletter block -->
-                                                                <h2 class="widget-title">Technically Black Blog updates</h2>
-                                                                <p>Enter your email address to receive new patient information and other useful information right to your inbox.</p>
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" placeholder="Email Address">
-                                                                    <span class="input-group-btn">
-                                                                <button class="btn btn-default" type="button">Subscribe</button>
-                                                                </span>
-                                                                </div>
-                                                                <!-- /input-group -->
-                                                            </div>
-                                                            <!-- newsletter block -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="tiny-footer">
-                                                        <!-- tiny footer block -->
-                                                        <div class="row">
-                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                <div class="copyright-content">
-                                                                    <p>© Scott Tillman 2018 | all rights reserved</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- /.tiny footer block -->
-                                                </div>
-                                                <!-- /.footer block -->
-                                            </div>
-                                        </div>
-                                        <!-- /.footer-->
-                                       
-
-
-                                        <script>
-                                        
-                                          new WOW().init();
-                                        </script>
+                              
+    <div class="footer">
+        <!-- footer-->
+        <div class="container">
+            <div class="footer-block">
+                <!-- footer block -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget">
+                            <h2 class="widget-title">Scott Tillman</h2>
+                            <ul class="listnone contact">
+                                <li><i class="fa fa-map-marker"></i> Chicago, IL </li>
+                                <li><i class="fa fa-phone"></i> 708.539.7937</li>
+              
+                                <li><i class="fa fa-envelope-o"></i> Scotttillman23@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <!-- social block -->
+                            <h2 class="widget-title">Social Feed</h2>
+                            <ul class="listnone">
+                                
+                                <li><a href="https://github.com/Stillman23"><i class="fa fa-github"></i> GitHub</a></li>
+                                
+                                <li><a href="https://www.linkedin.com/in/scott-tillman-7300838b/"><i class="fa fa-linkedin"></i> Linked In</a></li>
+                                <li>
+                                    <a href="https://www.instagram.com/___s.c.o.t.t___/"> <i class="fa fa-instagram"></i>Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.social block -->
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget-newsletter">
+                            <!-- newsletter block -->
+                            <h2 class="widget-title">Technically Black Blog updates</h2>
+                            <p>Enter your email address to receive new patient information and other useful information right to your inbox.</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                                <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Subscribe</button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                        <!-- newsletter block -->
+                    </div>
+                </div>
+                <div class="tiny-footer">
+                    <!-- tiny footer block -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright-content">
+                                <p>© Scott Tillman 2018 | all rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tiny footer block -->
+            </div>
+            <!-- /.footer block -->
+        </div>
+    </div>
+    <!-- /.footer-->
     
+
+
+    <script>
+    
+      new WOW().init();
+    </script>
+
   </body>
+
 </html>

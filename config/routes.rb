@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  get 'welcome/index'
-  get 'about' => 'users#about'
+  get 'about', to: 'users#about'
   get 'portfolio' => 'users#portfolio'
   get 'contact' => 'users#contact'
   post 'send_message' => 'users#send_message'

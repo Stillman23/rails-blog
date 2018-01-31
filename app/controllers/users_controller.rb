@@ -62,7 +62,6 @@ class UsersController < ApplicationController
   end
 
   def about
-    render 'about/about'
   end
 
   def contact

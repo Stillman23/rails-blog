@@ -21,14 +21,12 @@ ActiveRecord::Schema.define(version: 20180129004444) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string   "name",         null: false
-    t.text     "body",         null: false
-    t.string   "email"
-    t.string   "subject"
-    t.string   "phone"
-    t.string   "message_type"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "name",       null: false
+    t.text     "body",       null: false
+    t.integer  "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_comments_on_post_id", using: :btree
   end
 
   create_table "comments_posts", force: :cascade do |t|

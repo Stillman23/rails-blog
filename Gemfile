@@ -40,6 +40,10 @@ gem "font-awesome-rails"
 
 gem 'wow-rails'
 
+gem 'flexbox-rails', '~> 1.0'
+
+
+
 gem 'contact_us', '~>1.0.1'
 
 gem 'sticky-rails'

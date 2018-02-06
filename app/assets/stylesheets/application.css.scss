@@ -141,11 +141,13 @@ Author:             Jitu Chauhan
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    
   }
   a:hover, a:active, a:focus {
     color: #FF9000;
     outline: none;
     text-decoration: none;
+   
   }
   
   p {
@@ -2536,7 +2538,7 @@ label { }
 -----------------------------------*/
 .btn { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
     letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; 
-    text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
+    text-transform: uppercase; border-radius: 1px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
 .btn-default { color: #fff; background-color: #aa9144; }
 .btn-default:hover { color: #fff; background-color: #8e7424; border-color: #8e7424; }
 .btn-default.focus, .btn-default:focus { color: #fff; background-color: #8e7424; border-color: #8e7424; }
@@ -2755,7 +2757,7 @@ label { }
 .hero-text { font-size: 18px; color: #fff; margin-bottom: 30px; }
 .navigation { float: right; }
 .is-sticky .header{border-bottom: 1px solid #eae7e2;}
-.navigation, #navigation ul, .navigation ul li, .navigation ul li a, .navigation #menu-button { margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.navigation, #navigation ul, .navigation ul li, .navigation ul li a, .navigation #menu-button {margin-left: 350px; margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .navigation:after, .navigation > ul:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 .navigation #menu-button { display: none; }
 .navigation { font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
@@ -3339,6 +3341,7 @@ justify-content: center;
     border: 0;
     background-color: $primary;
     
+    
   }
   .navbar-brand {
    
@@ -3350,6 +3353,10 @@ justify-content: center;
       color: darken($primary, 10%);
     }
   }
+
+  .active{
+    margin-left: 350px;
+  }
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -3358,10 +3365,12 @@ justify-content: center;
         padding: 0.75em 0;
         letter-spacing: 1px;
         color: white;
+        
        
         &.active,
         &:hover {
           color: $primary;
+          
         }
       }
     }
@@ -3396,6 +3405,7 @@ justify-content: center;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+        
       }
     }
   }

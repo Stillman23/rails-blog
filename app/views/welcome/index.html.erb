@@ -1,18 +1,18 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval='300'>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval='4000'>
   <ol class="carousel-indicators">
-    <li data-target="" data-slide-to="0" class="active" data-interval='300'></li>
-    <li data-target="" data-slide-to="1" data-interval='300'></li>
-    <li data-target="" data-slide-to="2" data-interval='300'></li>
+    <li data-target="" data-slide-to="0" class="active" data-interval='4000'></li>
+    <li data-target="" data-slide-to="1" data-interval='4000'></li>
+    <li data-target="" data-slide-to="2" data-interval='4000'></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= image_tag 'history3.jpg', class:"d-block w-100 carousel-image" %>
+      <%= image_tag 'Front.JPG', style: "height: 500px;", class:"d-block w-100 carousel-image" %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'Scott.jpg', class:"d-block w-100 carousel-image" %>
+      <%= image_tag 'history3.jpg', style: "height: 500px;", class:"d-block w-100 carousel-image" %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'looking.jpg', class:"d-block w-100 carousel-image" %>
+      <%= image_tag 'Black2.JPG', style: "height: 500px; ", class:"d-block w-100 carousel-image" %>
     </div>
   </div>
   <a class="carousel-control-prev"  role="button" data-slide="prev">
@@ -27,7 +27,7 @@
 
 <script>
 $(document).ready(function(){
-   window.setInterval(cycle,2000);
+   window.setInterval(cycle,1000);
 
    function cycle(){
        $("#next-img").click();
@@ -84,25 +84,8 @@ $(document).ready(function(){
     
 
 
-    <!-- <div class="space-medium bg-default">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"><img src="images/MODEL.jpg" alt="" class="img-responsive"></div>
-                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                    <div class="well-block">
-                        <h1>Scott Tillman</h1>
-                        <h5 class="small-title ">"Nothing Will Work Unless You Do" - Maya Angelou</h5>
-                        <p>Hello! My name is Scott and I am a passionate Software Developer from Chicago, IL. I found my way in to Software Development after... </p>
-                   
-                        <a href="About.html " class="btn btn-default">View More About Scott</a> </div>
-                </div>
-            </div>
-        </div>
-      </div> -->
       <br><br>
 
-      <!-- Porfolio-->
-      <div class="row section recentworks topspace">
        
        <h2 class="section-title">Porfolio</h2>
        
@@ -117,8 +100,7 @@ $(document).ready(function(){
           <span class="title">Back Of The Yards Coffee</span>
         </a>
         <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a> | <a href="">Logotype</a></span>
-        <h4></h4>
-        <p></p>
+        
       </div>
       
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -130,8 +112,7 @@ $(document).ready(function(){
         <span class="title">San Jose Obrero Mission</span>
       </a>
       <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
-      <h4></h4>
-      <p></p>
+      
     </div>
     
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -143,49 +124,12 @@ $(document).ready(function(){
       <span class="title">Lorem studios - interior and patio design</span>
     </a>
     <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
-    <h4></h4>
-    <p></p>
+   
   </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-   <a class="thumbnail" href="sidebar-right.html">
-    <span class="img">
-      <%= image_tag 'RealWelcome.jpg' %>
-      <span class="cover"><span class="more">See details &rarr;</span></span>
-    </span>
-    <span class="title">Pure ipsum - development services for people</span>
-  </a>
-  <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
-  <h4></h4>
-  <p></p>
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
- <a class="thumbnail" href="sidebar-right.html">
-  <span class="img">
-    <%= image_tag 'RealWelcome.jpg' %>
-    <span class="cover"><span class="more">See details &rarr;</span></span>
-  </span>
-  <span class="title">Lorem studios - interior and patio design</span>
-</a>
-<span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
-<h4></h4>
-<p></p>
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
- <a class="thumbnail" href="sidebar-right.html">
-  <span class="img">
-    <%= image_tag 'RealWelcome.jpg' %>
-    <span class="cover"><span class="more">See details &rarr;</span></span>
-  </span>
-  <span class="title">Lorem studios - interior and patio design</span>
-</a>
-<span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
-<h4></h4>
-<p></p>
-</div>
 </div> 
+
+
 <!-- Blog-->
 
 <div id="blog">

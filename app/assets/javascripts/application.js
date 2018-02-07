@@ -12,15 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require owl.carousel
-//= require wow
 //= require bootstrap-sprockets
-//= require menumaker
-//= require menumaker.min
-//= require jquery.sticky
-//= require back-to-top
 //= require turbolinks
 //= require_tree .
-//= require modernizr.custom.28468
-//= require jquery.cslider
-

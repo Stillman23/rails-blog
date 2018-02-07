@@ -52,6 +52,8 @@ gem "paperclip", "~> 5.0.0"
 
 gem 'rails_bootstrap_navbar'
 
+gem 'parallaxslider-rails'
+
 
 
 

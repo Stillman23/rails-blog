@@ -21,4 +21,6 @@
 //= require back-to-top
 //= require turbolinks
 //= require_tree .
+//= require modernizr.custom.28468
+//= require jquery.cslider
 

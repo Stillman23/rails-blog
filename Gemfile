@@ -32,7 +32,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'bootstrap', '~> 4.0.0.beta3'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+gem 'popper_js', '~> 1.12', '>= 1.12.9'
 
 gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
 

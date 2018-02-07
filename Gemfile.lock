@@ -202,7 +202,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
-  bootstrap (~> 4.0.0.beta3)
+  bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
   contact_us (~> 1.0.1)
@@ -216,6 +216,7 @@ DEPENDENCIES
   paperclip (~> 5.0.0)
   parallaxslider-rails
   pg (~> 0.18)
+  popper_js (~> 1.12, >= 1.12.9)
   puma (~> 3.0)
   rails (~> 5.0.6)
   rails_bootstrap_navbar

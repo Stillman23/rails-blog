@@ -3476,6 +3476,7 @@ justify-content: center;
 
 div.col-sm-4.blog-post{
   text-align: center;
+  display: inline-block;
 }
 
 .blogsnippet{
@@ -3494,7 +3495,20 @@ div.col-sm-4.blog-post{
   position: relative;
   left:30px;
 }
+#heading-text{
+  font-family: "Oswald";
+  text-align: center;
+}
 
+
+
+.container {
+  max-width: 100%;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 
 

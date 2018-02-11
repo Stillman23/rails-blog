@@ -109,6 +109,8 @@ Author:             Jitu Chauhan
     line-height: 1.7;
     color: #4d4d4d;
     background: #fff;
+    position: absolute;
+   
   }
   
   #page {
@@ -2459,6 +2461,12 @@ p:last-child {
     /* text-decoration: underline; */
    text-decoration-style: solid;
   text-decoration-color:goldenrod;
+  position: relative;
+  left: 15px;
+  /* text-align: center; */
+  margin-top: 14px;
+  margin-left: 30px;
+ 
   
 }
     body { font-size: 16px;
@@ -2769,7 +2777,7 @@ label { }
   }
 }
 .is-sticky .header{border-bottom: 1px solid #eae7e2;}
-.navigation, #navigation ul, .navigation ul li, .navigation ul li a, .navigation #menu-button {margin-left: 350px; margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.navigation, #navigation ul, .navigation ul li, .navigation ul li a, .navigation #menu-button {margin-left: 350px; margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width:95%;}
 .navigation:after, .navigation > ul:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 .navigation #menu-button { display: none; }
 .navigation { font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
@@ -2778,7 +2786,7 @@ label { }
 .navigation.align-center > ul > li { display: inline-block; float: none; }
 .navigation.align-center ul ul { text-align: left; }
 .navigation.align-right > ul > li { float: right; }
-.navigation > ul > li > a { padding: 20px; font-size: 13px; color: #18150d; text-decoration: none; font-weight: 500; text-transform: uppercase; }
+.navigation > ul > li > a { padding: 20px; font-size: 13px; color: #18150d; text-decoration: none; font-weight: 500; text-transform: uppercase; width: 100%; text-align: center;}
 .navigation > ul > li:hover > a { color: #ffffff; background-color: #aa9144; }
 .navigation > ul > li.has-sub > a { padding-right: 32px; }
 
@@ -3466,6 +3474,19 @@ div.col-sm-4.blog-post{
 
 .blogsnippet{
   padding: 0px 20px 0px 20px;
+}
+
+#carousel-item{
+  padding-top: 20px;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+#navbarResponsive{
+  position: relative;
+  left:30px;
 }
 
 

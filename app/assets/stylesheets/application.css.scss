@@ -3309,6 +3309,12 @@ opacity: .5; }
 .carousel-image {
     max-height: 600px;
     min-height: 200px;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    top: 20px;
+  
 }
 
 .post-image{
@@ -3477,17 +3483,18 @@ div.col-sm-4.blog-post{
 }
 
 #carousel-item{
-  padding-top: 20px;
-  background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
+  // padding-top: 20px;
+  // background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: 50% 50%;
+  object-fit: fill;
 }
 
 #navbarResponsive{
   position: relative;
   left:30px;
 }
+
 
 
 

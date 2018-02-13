@@ -7,7 +7,7 @@
 <div class="centered">
 <%= image_tag @post.image.url, class: "post-image" %> <br>
 
-div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
                             <div class="post-holder">
                                 <!-- post holder -->
                                 
@@ -15,22 +15,22 @@ div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="post-content">
                                     <!-- post content -->
                                     <div class="post-header">
-  <%= @post.title %> <br>
+  <h1><%= @post.title %></h1> <br>
   <div class="meta">
                                             <!-- post meta -->
-                                            <span class="meta-date">Dec 24, 2020 </span>
+                                            <span class="meta-date">Dec 21, 2020 </span>
                                             <span class="meta-comment"> <a href="#" class="meta-link">05 Comment </a></span>
                                             <span class="meta-user">by <a href="#"> Admin </a></span>
                                             <span class="meta-cat"> Category name </span>
                                         </div>
-                                    </div>
-  <%= @post.content %>
+                                    </div> <br><br>
+  <h4><%= @post.content %></h4>
     <!-- /.related post block -->
                                     <div class="post-navigation">
                                         <!-- post navigation -->
-                                        <div class="row">
+                                        
                                             <div class="nav-links">
-                                                <div class="col-md-6 col-sm-6">
+                                               
                                                     <div class="nav-previous">
                                                         <!-- nav previous -->
                                                         <a href="#" class="prev-link">previous post</a>
@@ -51,32 +51,11 @@ div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <!-- /.nav previous -->
                                                 </div>
                                             </div>
-                                        </div>
+                                        
                                     </div>
-                                    <!-- /. post navigation -->
-                                    <div class="author-post">
-                                        <!-- Post author -->
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                                <div class="author-img">
-                                                    <a href="#"><img src="images/model.jpg" class="img-responsive" alt=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                <div class="author-bio">
-                                                    <div class="author-header">
-                                                        <h3><a href="about.html" class="title">Scott Tillman</a></h3>
-                                                    </div>
-                                                    <div class="author-content">
-                                                        <p>Etiam laoreet sitamet purus sed vestibulu ullam cursus lacus eget pharetra accumsan ante metus tinante in ones leousce in consectetur lacus non efficiturex.</p>
-                                                        <a href="blog-default.html" class="btn btn-default">View All My Post</a> </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
 
-
-                                    <div class="leave-comments">
+                                     <div class="leave-comments">
                                     <h2 class="reply-title">Leave a Reply</h2>
                                     <form class="reply-form">
 
@@ -84,46 +63,7 @@ div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="row">
                                             <!-- Textarea -->
                                             <div class="form-group">
-                                            
-                                                <div class="col-md-12">
-                                                    <label class="control-label" for="textarea">Comments</label>
-                                                    <textarea class="form-control" id="textarea" name="textarea" rows="6"></textarea>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-md-12">
-                                                <!-- Text input-->
-                                                <div class="form-group">
-                                                    <label class="control-label" for="name">Name</label>
-                                                    <span class="required">*</span>
-                                                    <input id="name" name="name" type="text" class="form-control" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Text input-->
-                                            
-
-                                            <div class="col-md-12">
-                                                <!-- Button -->
-                                                <div class="form-group">
-                                                    <button id="singlebutton" name="singlebutton" class="btn btn-default">Leave A Comment</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-
-                
-                    
-
-
- 
-
-  <%= form_for [@post, @comment] do |f| %>
+                                      <%= form_for [@post, @comment] do |f| %>
       <% if @comment.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
@@ -135,9 +75,16 @@ div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           </ul>
         </div>
       <% end %>
-      <%= f.hidden_field :message_type, value:'comment', class:'form-control' %>
-      <%= f.label :name %><br>
-      <%= f.text_field :name %><br>
+       <div class="col-md-12">
+                                                <!-- Text input-->
+                                                <div class="form-group">
+                                                <%= f.hidden_field :message_type, value:'comment', class:'form-control' %>
+                                                    <label class="control-label" for="name"> Name<%= f.text_field :name %></label>
+                                                    <span class="required">*</span>
+                                                    <input id="name" name="name" type="text" class="form-control" required="">
+                                                </div>
+                                            </div>
+     
       <div class:"comment-section">
       <%= f.label 'comment' %><br>
       <%= f.text_area :body, rows:6 %>
@@ -178,11 +125,68 @@ div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <% end %>
     </ul>
   </div>
-  <% if logged_in? %>
+
+                                    <!-- /. post navigation -->
+                                    <div class="author-post">
+                                        <!-- Post author -->
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <div class="author-img">
+                                                    <a href="#"> <%= image_tag 'Site18.JPG', :class => "aboutimg" %></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="author-bio">
+                                                    <div class="author-header">
+                                                        <h3><a href="about.html" class="title">Scott Tillman</a></h3>
+                                                    </div>
+                                                    <div class="author-content">
+                                                        <p>Etiam laoreet sitamet purus sed vestibulu ullam cursus lacus eget pharetra accumsan ante metus tinante in ones leousce in consectetur lacus non efficiturex.</p>
+                                                        <a href="blog-default.html" class="btn btn-default">View All My Post</a> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                   
+                                            
+                                                <div class="col-md-12">
+                                                    <label class="control-label" for="textarea"></label>
+                                                    <textarea class="form-control" id="textarea" name="textarea" rows="6"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                           
+                                            <!-- Text input-->
+                                            
+
+                                            <div class="col-md-12">
+                                                <!-- Button -->
+                                                <div class="form-group">
+                                                    <button id="singlebutton" name="singlebutton" class="btn btn-default">Leave A Comment</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                
+          <% if logged_in? %>
     <%= link_to "Edit", edit_post_path(@post) %>
     <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
   <% end %>
-</div>
+</div>            
+
+
+ 
+
+
 
 
 

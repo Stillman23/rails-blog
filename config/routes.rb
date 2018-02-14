@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   get 'download_pdf', to: 'users#download_pdf', as: 'resume'
+  
   resources :posts do
     resources :comments
   end
@@ -16,5 +17,7 @@ Rails.application.routes.draw do
   resources :sessions
   resources :portfolios
   resources :contacts
+  resources :archives
+  resources :categories
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

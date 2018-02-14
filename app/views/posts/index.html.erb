@@ -34,34 +34,41 @@ line-height: 50px;">Why Technically Black?</h3>
 <main class="col-md-7">
         
     
+    <% @posts.each do |p| %>
+        <article class="post post-#{p.id}">
+                
+            <header class="entry-header">
+                
+                <h1 class="entry-title">      
+                        
+                    <%= link_to p.title, post_path(p)%>
+                </h1>
+                <div class="entry-meta">
+                    <span class="post-date"><%= p.created_at.strftime("%B %d, %Y") %></span>
+
+                    <span class="post-author">Scott Tillman</span>
+
+                    <span class="comments-link">
+                        
+                        <%= p.comments.count %>
+                        
+                    </span>
+                </div>
+            </header>
+            <div class="entry-content clearfix">
+                <p>
+                    <%= p.content.truncate(300)%>
+                </p>
+                <div class="read-more cl-effect-14">
+                    <%= link_to post_path(p), class: 'more-link' do %>
+                       Continue reading <span class="meta-nav">→</span>
+                    <% end %>
+                </div>
+                
+            </div>
         
-    <article class="post post-1">
-            
-        <header class="entry-header">
-            
-            <h1 class="entry-title">      
-                    
-                <a href="posts/1">Why Web Development</a>
-            </h1>
-            <div class="entry-meta">
-                <span class="posts/1"><a href="posts/1">Web Development</a></span>
-
-                <span class="post-date"><a href="#"><time class="entry-date" datetime="2012-11-09T23:15:57+00:00">January 15th, 2018</time></a></span>
-
-                <span class="post-author"><a href="#">Scott Tillman</a></span>
-
-                <span class="comments-link"><a href="posts/1">0 Comments</a></span>
-            </div>
-        </header>
-        <div class="entry-content clearfix">
-            <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
-            <div class="read-more cl-effect-14">
-                <a href="single.html" class="more-link">Continue reading <span class="meta-nav">→</span></a>
-            </div>
-            
-        </div>
-       
-    </article>
+        </article>
+    <% end %>
     
     <br>
 

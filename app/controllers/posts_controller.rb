@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update , :destroy]
   before_action :verify_admin, only: [:new, :create, :edit, :update, :destroy]
   def index
+    @posts = Post.all
   end
 
   def new

@@ -1,199 +1,169 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval='4000'>
-  <ol class="carousel-indicators">
-    <li data-target="" data-slide-to="0" class="active" data-interval='4000'></li>
-    <li data-target="" data-slide-to="1" data-interval='4000'></li>
-    <li data-target="" data-slide-to="2" data-interval='4000'></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag 'Site15.JPG', class:"d-block w-100 carousel-image" %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'site14.JPG', class:"d-block w-100 carousel-image" %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'Site8.JPG', class:"d-block w-100 carousel-image" %>
-    </div>
-  </div>
-  <a class="carousel-control-prev"  role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" id="next-img"aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<script>
-$(document).ready(function(){
-   window.setInterval(cycle,1000);
-
-   function cycle(){
-       $("#next-img").click();
-   }
-
+<div class="indexcontainer">
+  <div class="col-xs-12">
     
-    
-});
-</script>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval='4000'>
+      <ol class="carousel-indicators">
+        <li data-target="" data-slide-to="0" class="active" data-interval='4000'></li>
+        <li data-target="" data-slide-to="1" data-interval='4000'></li>
+        <li data-target="" data-slide-to="2" data-interval='4000'></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag 'Site15.JPG', class:"d-block w-100 carousel-image" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'site14.JPG', class:"d-block w-100 carousel-image" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'Site8.JPG', class:"d-block w-100 carousel-image" %>
+        </div>
+      </div>
+      <a class="carousel-control-prev"  role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" id="next-img"aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
+    <script>
+    $(document).ready(function(){
+      window.setInterval(cycle,1000);
 
+      function cycle(){
+          $("#next-img").click();
+      }
 
-<!-- About Me -->
-
-<section id="about">
-  <div class="Why">
-    <div  id="heading">
-      <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
-        <h3 style="font-family: Oswald; font-size: 44px; color: #36ab9f;
         
-        line-height: 50px;">About Me</h3>
-        <p> Creating a New Tomorrow</p>
-        <hr style="border-top: 2px solid goldenrod;" class="full">
-        <br/>
-      </div>
-    </div>	<!-- row -->
-   
-      <div class="col-md-8 col-md-offset-2">
-        <p class="text-center">Teacher turn tech enthusiast, Scott Tillman Software Engineer and Graduate Student at DePaul University. He lives in Chicago and loves solving problems.  </p>
-      </div>
-  	<!-- row -->
+        
+    });
+    </script>
 
 
-    <section class="home" id="home" data-stellar-background-ratio="0.4">
-     
-       
-          <div class="col-md-12">
-            <div class="st-home-unit">
-              <div class="hero-txt">
-                <p class="hero-work">I am here to build. To Create.</p>
-                <h2 class="hero-title">Lets build something Together!</h2>
-                <!-- <p class="hero-sub-title">We Provide Hight Quality Bootstrap Template</p> -->
-                <!-- <a href="#" class="btn btn-default btn-lg left-btn">Purchase Now</a> -->
-                <a href="#" class="btn btn-main btn-lg">Find Out More</a>
-              </div>
-              
-            </div>
+
+    <!-- About Me -->
+
+    <section id="about">
+      <div class="Why">
+        <div  id="heading">
+          <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
+            <h3 style="font-family: Oswald; font-size: 44px; color: #36ab9f;
+            
+            line-height: 50px;">About Me</h3>
+            <p> Creating a New Tomorrow</p>
+            <hr style="border-top: 2px solid goldenrod;" class="full">
+            <br/>
+          </div>
+        </div>	<!-- row -->
+      
+          <div class="col-md-8 col-md-offset-2">
+            <p class="text-center">Teacher turn tech enthusiast, Scott Tillman Software Engineer and Graduate Student at DePaul University. He lives in Chicago and loves solving problems.  </p>
+          </div>
+        <!-- row -->
+
+
+    
+
+        
+    <div class="container">
+
+          <br><br>
+
+          
+          <h2 class="section-title">Portfolio</h2>
+          
+          <div class="thumbnails recentworks row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <a class="thumbnail" href="https://demo-back-yards-coffee.herokuapp.com/">
+              <span class="img">
+                <%= image_tag 'Bofyards.png' %>
+                <span class="cover"><span class="more">See details &rarr;</span></span>
+              </span>
+              <span class="title">Back Of The Yards Coffee</span>
+            </a>
+            <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a> | <a href="">Logotype</a></span>
+            
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <a class="thumbnail" href="https://qa-san-jose.herokuapp.com">
+            <span class="img">
+              <%= image_tag 'Sjm.png' %>
+              <span class="cover"><span class="more">See details &rarr;</span></span>
+            </span>
+            <span class="title">San Jose Obrero Mission</span>
+          </a>
+          <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
           
         </div>
-     
-      <div class="mouse-icon"><div class="wheel"></div></div>
-    </section>
-
-    
- <div class="container">
-
-      <br><br>
-
-       
-       <h2 class="section-title">Portfolio</h2>
-       
-       <div class="thumbnails recentworks row">
         
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-         <a class="thumbnail" href="https://demo-back-yards-coffee.herokuapp.com/">
+        <a class="thumbnail" href="sidebar-right.html">
           <span class="img">
-            <%= image_tag 'Bofyards.png' %>
+            <%= image_tag 'RealWelcome.jpg' %>
             <span class="cover"><span class="more">See details &rarr;</span></span>
           </span>
-          <span class="title">Back Of The Yards Coffee</span>
+          <span class="title">Lorem studios - interior and patio design</span>
         </a>
-        <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a> | <a href="">Logotype</a></span>
-        
+        <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
+      
       </div>
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-       <a class="thumbnail" href="https://qa-san-jose.herokuapp.com">
-        <span class="img">
-          <%= image_tag 'Sjm.png' %>
-          <span class="cover"><span class="more">See details &rarr;</span></span>
-        </span>
-        <span class="title">San Jose Obrero Mission</span>
-      </a>
-      <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
-      
-    </div>
+
+    </div> 
+
+
+    <!-- Blog-->
+
+    <div id="blog">
+
+
+    <br><hr style="border: 2px dashed goldenrod;"><br>
     
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-     <a class="thumbnail" href="sidebar-right.html">
-      <span class="img">
-        <%= image_tag 'RealWelcome.jpg' %>
-        <span class="cover"><span class="more">See details &rarr;</span></span>
-      </span>
-      <span class="title">Lorem studios - interior and patio design</span>
-    </a>
-    <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
-   
-  </div>
+    
 
-</div> 
+    <div class="content-block" id="blog">
 
-
-<!-- Blog-->
-
-<div id="blog">
-
-
- <br><hr style="border: 2px dashed goldenrod;"><br>
- 
- 
-
-<div class="content-block" id="blog">
-
-			
-					<header class="block-heading cleafix">
-					
-						<h2 class="section-title">TE<span style="color:#a31b1b;">C</span>HNI<span style="color:#a31b1b;">C</span>ALLY BLAC<span style="color:#36ab9f;">K</span> Blog</h2>
-						<p><a href="Post_path" class="btn btn-o btn-lg pull-right">View All Blog Post</a></p>
-					</header>
-					<section class="block-body">
-						
-            
-							<div class="col-sm-4 blog-post">
-							
-								<a href="#"><h2></h2></a>
-								<div class="date"></div>
-								<p></p>
-								<a href=""></a>
-							</div>
-							<div class="col-sm-4 blog-post">
-								<%= image_tag 'History.jpg', :class => "bloghomepic" %>
-								<a href="posts/1"><h2 style="color:#a31b1b; text-align: center;">Why Web Developement?</h2></a>
-								<div class="date">12 Feb, 2018</div>
-								<p class = "blogsnippet">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								<a href="">Read More</a>
-							</div>
+          
+              <header class="block-heading cleafix">
               
-							<div class="col-sm-4 blog-post">
-								
-								<a href="#"><h2></h2></a>
-								<div class="date"></div>
-								<p></p>
-								<a href=""></a>
-							</div>
-						</div>
-            	</div><!-- #blog -->
-					</section>
+                <h2 class="section-title">TE<span style="color:#a31b1b;">C</span>HNI<span style="color:#a31b1b;">C</span>ALLY BLAC<span style="color:#36ab9f;">K</span> Blog</h2>
+                <p><a href="Post_path" class="btn btn-o btn-lg pull-right">View All Blog Post</a></p>
+              </header>
+              <section class="block-body">
+                
+                
+                  <div class="col-sm-4 blog-post">
+                  
+                    <a href="#"><h2></h2></a>
+                    <div class="date"></div>
+                    <p></p>
+                    <a href=""></a>
+                  </div>
+                  <div class="col-sm-4 blog-post">
+                    <%= image_tag 'History.jpg', :class => "bloghomepic" %>
+                    <a href="posts/1"><h2 style="color:#a31b1b; text-align: center;">Why Web Developement?</h2></a>
+                    <div class="date">12 Feb, 2018</div>
+                    <p class = "blogsnippet">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
+                    <a href="">Read More</a>
+                  </div>
+                  
+                  <div class="col-sm-4 blog-post">
+                    
+                    <a href="#"><h2></h2></a>
+                    <div class="date"></div>
+                    <p></p>
+                    <a href=""></a>
+                  </div>
+                </div>
+                  </div><!-- #blog -->
+              </section>
 
-	
+      
 
-      <br><br>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
- 
-
+          <br><br>
+    </div>
+  </div>
+ </div>

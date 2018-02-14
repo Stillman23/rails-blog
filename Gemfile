@@ -51,6 +51,7 @@ gem 'contact_us', '~>1.0.1'
 gem 'sticky-rails'
 
 gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk', '~> 2.3'
 
 gem 'rails_bootstrap_navbar'
 

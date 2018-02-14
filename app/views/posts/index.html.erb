@@ -38,7 +38,9 @@ line-height: 50px;">Why Technically Black?</h3>
         <article class="post post-#{p.id}">
                 
             <header class="entry-header">
-                
+                <div class='flex-center-content'>
+                    <%= image_tag p.image.expiring_url, class:'post-index-image' %>
+                </div>
                 <h1 class="entry-title">      
                         
                     <%= link_to p.title, post_path(p)%>

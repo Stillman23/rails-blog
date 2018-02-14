@@ -1,236 +1,135 @@
-
 <section id="about">
-<div class="Why">
-    <div class="row text-center" id="heading">
-        <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
-            <h3 style="font-size: 44px; color: #36ab9f;
-            
-line-height: 50px;">Why Technically Black?</h3>
-            <p> Creating a New Tomorrow</p>
-            <hr style="border-top: 2px solid goldenrod;" class="full">
-            <br/>
-        </div>
-    </div>	<!-- row -->
-    <div class="row about-us-text">
-        <div class="col-md-8 col-md-offset-2">
-            <p class="text-center">I dedicate this personal site to the Black Tech ecosystem, the 6%, and other underespresented groups in Technlogy. I also dedicate this space to the future of Technology. May it be a space that serves and is inclusive of all people. As I was navigigating my career transition from teaching to technology, I searched for narratives similar to mind to help walk me through this space. As I searched I found a pleathra of Blogs and Youtube videos of individuals who had decided to transition into Web Development. I am thankful what all that I found. I hope this can be another space full of resources for individuals like myself who aspire to transition. I did not find as many blogs and youtube videos from persons who look like me. I think it is really important to see others who look like you doing what you inspire to do to remind you of the possibility or to cheer you on. This ideal stems from my years of teaching and asking my students what they wanted to do. In all of my four years of teaching I only heard one of my students mention Web Development. With that said, I dedicat this space to my students who have been with me in spirit as I am making this transition. I hope to one day bridge the gap between my years in the classroom and my passion of coding. I also hope this can be one additional online space for those who indentify as Technically...Black.  </p>
-        </div>
-    </div>	<!-- row -->
-</section>
-<br><hr style="vertical-align: bottom; border: 2px dashed goldenrod;"><br>
+    <div class="Why">
+        <div class="row text-center" id="heading">
+            <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
+                <h3 style="font-size: 44px; color: #36ab9f;
+                
+                line-height: 50px;">Why Technically Black?</h3>
+                <p> Creating a New Tomorrow</p>
+                <hr style="border-top: 2px solid goldenrod;" class="full">
+                <br/>
+            </div>
+        </div>	<!-- row -->
+        <div class="row about-us-text">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-center">I dedicate this personal site to the Black Tech ecosystem, the 6%, and other underespresented groups in Technlogy. I also dedicate this space to the future of Technology. May it be a space that serves and is inclusive of all people. As I was navigigating my career transition from teaching to technology, I searched for narratives similar to mind to help walk me through this space. As I searched I found a pleathra of Blogs and Youtube videos of individuals who had decided to transition into Web Development. I am thankful what all that I found. I hope this can be another space full of resources for individuals like myself who aspire to transition. I did not find as many blogs and youtube videos from persons who look like me. I think it is really important to see others who look like you doing what you inspire to do to remind you of the possibility or to cheer you on. This ideal stems from my years of teaching and asking my students what they wanted to do. In all of my four years of teaching I only heard one of my students mention Web Development. With that said, I dedicat this space to my students who have been with me in spirit as I am making this transition. I hope to one day bridge the gap between my years in the classroom and my passion of coding. I also hope this can be one additional online space for those who indentify as Technically...Black.  </p>
+            </div>
+        </div>	<!-- row -->
+    </section>
+    <br><hr style="vertical-align: bottom; border: 2px dashed goldenrod;">
 
-    
+        
 
 <div class="content-body">
-<div class="container">
-<div class="row">
-    
+    <div class="container">
 
-
-
-
-
-
-<main class="col-md-7">
         
-    
-    <% @posts.each do |p| %>
-        <article class="post post-#{p.id}">
-                
-            <header class="entry-header">
-                <div class='flex-center-content'>
-                    <%= image_tag p.image.expiring_url, class:'post-index-image' %>
-                </div>
-                <h1 class="entry-title">      
-                        
-                    <%= link_to p.title, post_path(p)%>
-                </h1>
-                <div class="entry-meta">
-                    <span class="post-date"><%= p.created_at.strftime("%B %d, %Y") %></span>
 
-                    <span class="post-author">Scott Tillman</span>
 
-                    <span class="comments-link">
-                        
-                        <%= p.comments.count %>
-                        
-                    </span>
-                </div>
-            </header>
-            <div class="entry-content clearfix">
-                <p>
-                    <%= p.content.truncate(300)%>
-                </p>
-                <div class="read-more cl-effect-14">
-                    <%= link_to post_path(p), class: 'more-link' do %>
-                       Continue reading <span class="meta-nav">→</span>
-                    <% end %>
-                </div>
-                
-            </div>
-        
-        </article>
-    <% end %>
-    
-    <br>
 
-   
 
-   
-        <br>
- 
 
-    
-</main>
 
-<aside class="col-md-5">
-   <!-- widget start -->
-   <div class="widget widget-recent-post">
-        <!-- widget recent post -->
-        <h3 class="widget-title"> Recent Post </h3>
-        <ul class="listnone widget-recent-post">
-            <li>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        
-                            <!-- <a href="#"><img src="images/Thinking.jpg" alt=""></a> -->
-                        
-                        <div class="author-img">
-                                <a href="#"><%= image_tag 'History.jpg' %></a>
-                            </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                        <div class="recent-post-content">
-                            <h4 class="recent-title"><a href="#" class="title">bootstrap responsive design templates free download</a></h4>
-                            <div class="meta"><span class="meta-date">22 Jan, 2020</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="row">
-                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <div class="author-img">
-                           
-                                </div>
-                    </div>
-                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                        <div class="recent-post-content">
-                            <h4 class="recent-title"></h4>
-                            <div class="meta">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <div class="author-img">
-                            
-                                </div>
-                    </div>
-                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                        <div class="recent-post-content">
-                            <h4 class="recent-title">
-                            <div class="meta">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    
-    
-    <!-- /.widget recent post -->
-    <div class="widget widget-archives">		
-        <h3 class="widget-title">Archives</h3>		
-        <ul>
-            <li>
-                <a href="#">Febuary 2018</a>
-            </li>
+
             
-            <li>
-                <a href="#">March 2018</a>
-            </li>
-            <li>
-                    <a href="#">April 2018</a>
-                </li>
-                <li>
-                    <a href="#">May 2018</a>
-                </li>
-                <li>
-                    <a href="#">June 2018</a>
-                </li>
-                <li>
-                    <a href="#">July 2018</a>
-                </li>
-                <li>
-                    <a href="#">August 2018</a>
-                </li>
-                <li>
-                    <a href="#">September 2018</a>
-                </li>
-                <li>
-                    <a href="#">October 2018</a>
-                </li>
-                <li>
-                    <a href="#">November 2018</a>
-                </li>
-                <li>
-                    <a href="#">December 2018</a>
-                </li>
-        </ul>
-    </div>
+        <div class="widget widget-recent-post">
+        <br>
+        <% @posts.each do |p| %>
+            <article class="post post-#{p.id}">
+                    
+                <header class="entry-header">
+                <br>
+                    <div class='flex-center-content'>
+                        <%= image_tag p.image.expiring_url, class:'post-index-image' %>
+                    </div>
+                    <br>
+                    <h1 class="entry-title">      
+                            
+                        <%= link_to p.title, post_path(p)%>
+                    </h1>
+                    <div class="entry-meta">
+                        <span><%= p.created_at.strftime("%B %d, %Y") %> | </span>
 
-    <div class="widget widget-category">		
-        <h3 class="widget-title">Category</h3>		
-        <ul>
-            <li>
-                <a href="#">Web Design</a>
-            </li>
-            <li>
-                <a href="#">Web Development</a>
-            </li>
-            <li>
-                <a href="#">SEO</a>
-            </li>
-        </ul>
-    </div>
-</aside>
-</div>
+                        <span>Scott Tillman | </span>
 
+                        <span class="comments-link">
+                            
+                            <%= p.comments.count %> Comments
+                            
+                        </span>
+                    </div>
+                </header>
+                <div class="entry-content clearfix">
+                    <p>
+                        <%= p.content.truncate(300)%>
+                    </p>
+                    <div class="read-more cl-effect-14">
+                        <%= link_to post_path(p), class: 'more-link' do %>
+                        Continue reading <span class="meta-nav">→</span>
+                        <% end %>
+                    </div>
+                    <br>
+                    <hr style="vertical-align: bottom; border: 2px solid goldenrod;">
+                     <br>
 
-<br><hr style=" border: 2px solid black;"><br>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="st-pagination">
-        <ul class="pagination">
-            <li>
-                <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="active"><a href="blog-default.html">1</a></li>
-            <li><a href="Blogpg2.html">2</a></li>
-            <li><a href="Blogpg3.html">3</a></li>
-            <li><a href="Blogpg4.html">4</a></li>
-            <li><a href="Blogpg3.html">5</a></li>
-            <li>
-                <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
+                    
+                </div>
+            
+            </article>
+        <% end %>
+        
+        <br>
+
+        
+        </div>
+
     
-</div>
+
+    
+            <br>
+    
+
+        
 
 
-</div>
-</div>
 
-</div>
-</div>
+                                
+                
+        
+        
+    
+    </div>
 
-</div>
+
+    <br><hr style=" border: 2px solid black;"><br>
+    <div class='flex-center-content'>
+    
+        <div class="st-pagination">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="active"><a href="blog-default.html">1</a></li>
+                <li><a href="Blogpg2.html">2</a></li>
+                <li><a href="Blogpg3.html">3</a></li>
+                <li><a href="Blogpg4.html">4</a></li>
+                <li><a href="Blogpg3.html">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        
+
+
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+    </div>

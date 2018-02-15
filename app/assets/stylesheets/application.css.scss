@@ -13,7 +13,6 @@
 @import "font-awesome";
 
 
-
 /* CSS Document */
 
 /*------------------------------------------------------------------
@@ -3514,6 +3513,12 @@ div.col-sm-4.blog-post{
   max-width: 300px;
   border-radius: 10px;
 }
+
+.parallax-container {
+  height: "your height here";
+}
+
+.parallax img { display: block; }
 
 
 

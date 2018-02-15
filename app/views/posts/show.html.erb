@@ -1,11 +1,11 @@
- <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <div class="row">
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                 <div class="row">
                     
-<div class="centered">
-<%= image_tag @post.image.expiring_url, class: "post-image" %> <br>
+                    <div class="centered">
+                    <%= image_tag @post.image.expiring_url, class: "post-image" %> <br>
 
 
                             <div class="post-holder">
@@ -15,40 +15,38 @@
                                 <div class="post-content">
                                     <!-- post content -->
                                     <div class="post-header">
-  <h1><%= @post.title %></h1> <br>
-
-
-  
-  <div class="meta">
+                    <h1><%= @post.title %></h1> <br>
+                    <div class="meta">
    
-                                            <!-- post meta -->
-                                            <span class="meta-date"><%= @post.created_at.strftime("%B %d, %Y") %> |</span>
-                                            <span class="meta-comment"> Scott Tillman | </span>
-                                            <span class="meta-user"><%= @post.comments.count %> Comments</span>
+                         <!-- post meta -->
+                        <span class="meta-date"><%= @post.created_at.strftime("%B %d, %Y") %> |</span>
+                        <span class="meta-comment"> Scott Tillman | </span>
+                        <span class="meta-user"><%= @post.comments.count %> Comments</span>
                                            
                                           
-                                        </div>
-                                    </div> <br><br>
-  <h4><%= @post.content %></h4>
+                    </div>
+                </div> 
+                    <br><br>
+                     <h4><%= @post.content %></h4>
     <!-- /.related post block -->
-                                    <br>
+                    <br>
                                 
                                         
-                                    </div>
-                                      </div>
+            </div>
+        </div>
                                     
 
-                                     <div class="leave-comments">
-                                    <h1 class="reply-title">Leave a Comment</h1>
+                     <div class="leave-comments">
+                            <h1 class="reply-title">Leave a Comment</h1>
                                     <form class="reply-form">
 
 
-  <%= form_for [@post, @comment] do |f| %>
-      <% if @comment.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+                                    <%= form_for [@post, @comment] do |f| %>
+                                     <% if @comment.errors.any? %>
+                                    <div id="error_explanation">
+                            <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
     
-          <ul>
+            <ul>
           <% @comment.errors.full_messages.each do |message| %>
             <li><%= message %></li>
           <% end %>
@@ -62,7 +60,6 @@
       <%= f.label 'comment' %><br>
       <%= f.text_area :body, rows:6 %>
       </div>
-
 <div class="col-md-12">
                                                 <!-- Button -->
                                                 <div class="form-group">
@@ -133,17 +130,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-
-
-                                   
-                                            
-                                            
-                                            
-                                           
                                             <!-- Text input-->
-                                            
-
                                             
                                         </div>
                                     </form>
@@ -154,7 +141,6 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
-                
           <% if logged_in? %>
     <%= link_to "Edit", edit_post_path(@post) %>
     <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
@@ -187,7 +173,9 @@
                                                     </div>
                                                     <!-- /.nav previous -->
                                                 </div>
-                                            </div>    
+                                            </div>   
+                                            
+                                             
 
 
  

@@ -56,7 +56,8 @@ gem 'aws-sdk', '~> 2.3'
 gem 'rails_bootstrap_navbar'
 
 gem 'parallaxslider-rails'
-
+gem 'closure_tree'
+gem 'bootstrap-sass'
 
 
 

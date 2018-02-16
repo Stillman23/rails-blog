@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount Ckeditor::Engine => '/ckeditor'
   root 'welcome#index'
   get 'about', to: 'users#about'
   get 'portfolio' => 'users#portfolio'

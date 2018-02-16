@@ -58,8 +58,7 @@ gem 'rails_bootstrap_navbar'
 gem 'parallaxslider-rails'
 gem 'closure_tree'
 gem 'bootstrap-sass'
-gem 'simple_form', '~> 3.2'
-gem 'ckeditor', '~> 4.1'
+
 
 
 

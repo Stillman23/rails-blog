@@ -40,7 +40,9 @@
                 <header class="entry-header">
                 <br>
                     <div class='flex-center-content'>
+                    <%= link_to post_path(p) do  %>
                         <%= image_tag p.image.expiring_url, class:'post-index-image' %>
+                    <% end %>
                     </div>
                     <br>
                     <h1 class="entry-title">      

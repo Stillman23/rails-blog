@@ -20,20 +20,22 @@
    
                          <!-- post meta -->
                         <span class="meta-date"><%= @post.created_at.strftime("%B %d, %Y") %> |</span>
-                        <span class="meta-comment"> Scott Tillman | </span>
-                        <span class="meta-user"><%= @post.comments.count %> Comments</span>
+                        <span class="meta-comment"> Scott Tillman  </span>
+                        <span class="meta-user"><%= %></span>
                                            
                                           
                     </div>
                 </div> 
                     <br><br>
-                     <h4><%= simple_format @post.content %></h4>
+                    <div class= "contentpost">
+                     <h2><%= simple_format @post.content %></h2>
+                     </div>
     <!-- /.related post block -->
                     <br>
                                 
                                         
-            </div>
-        </div>
+            
+       
                                     
 
                   

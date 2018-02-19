@@ -1407,7 +1407,7 @@ Author:             Jitu Chauhan
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
-
+line-height: initial;
  }
 
 * {outline: none;}
@@ -2872,7 +2872,7 @@ label { }
 7. Content 
 -------------------------------------*/
 
-.content { padding-top: 60px; padding-bottom: 60px; }
+.content { padding-top: 60px; padding-bottom: 0px; }
 
 /*-----------------------------------
 8. Footer 
@@ -3524,6 +3524,23 @@ div.col-sm-4.blog-post{
 text-align: left;
 margin-left: 2px;
 margin-right: 2px;
+font-size: 12px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.post-content {
+  padding-top: 40px;
+  padding-right: 34px;
+  margin-left: 50px;
+  margin-right: 4px;
+
+
+}
+
+p.text-center{
+  padding-left: 30px;
+  padding-right: 30px;
 
 }
 

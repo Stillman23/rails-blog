@@ -2528,7 +2528,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 -----------------------------------*/
 label { }
 .control-label { color: #474747; font-weight: 700; font-size: 12px; text-transform: uppercase; }
-.form-control { width: 100%; height: 50px; padding: 6px 12px; 
+.form-control { width: 100%; height: 150px; padding: 6px 12px; 
     font-size: 16px; line-height: 1.42857143; color: #333; background-color: #fff; border: 1px solid #dcd9d3; 
     background-image: none; border-radius: 10px; -webkit-box-shadow: inset 0 0px 0px rgba(255, 255, 255, .075); 
     box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .075); margin-bottom: 15px; }
@@ -3544,6 +3544,16 @@ p.text-center{
 
 }
 
+.timeline-body{
+  margin-left: 65px;
+  font-size: 14px;
+}
+
+.resume{
+  padding-left: 30px;
+  padding-right: 12px;
+
+}
 
 
 

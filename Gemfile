@@ -44,6 +44,8 @@ gem 'wow-rails'
 
 gem 'flexbox-rails', '~> 1.0'
 
+gem 'tinymce-rails'
+
 
 
 gem 'contact_us', '~>1.0.1'

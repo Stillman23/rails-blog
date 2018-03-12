@@ -3558,4 +3558,125 @@ p.text-center{
 
 
 
+.tv {
+ 
+  display:inline-block;
+  top: 0;
+  left: 0;
+  z-index: 3 !important; 
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tv .screen {
+ 
+  display:inline-block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.tv .screen.active {
+  opacity: 1;
+}
+#vidtop-content {
+  top: 0;
+  color: #fff;
+}
+.vid-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 1rem;
+  font-family: Avenir, Helvetica, sans-serif;
+  z-index: 2;
+}
+.vid-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.2;
+}
+.vid-info a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  /*background: rgba(0,0,0,0.5);*/
+  transition: .6s background;
+  border-bottom: none;
+  margin: 1rem auto;
+  text-align: center;
+}
+.margin-5 {
+  margin: 5px;
+}
+.margin-10 {
+  margin: 10px;
+}
+.margin-top-10 {
+  margin-top: 10px;
+}
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.margin-top-30 {
+  margin-top: 30px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.fa-volume-off {
+  display: none;
+}
+.fa-volume-off, .fa-volume-up {
+  min-width: 18px;
+}
+.mute-btn, .next-video-btn {
+  width: 100%;
+  font-size: 0.8rem !important;
+}
+@media (max-width: 1199px) {
+  .mute-btn, .next-video-btn {
+    margin: 10px;
+    height: 50px !important;
+    padding: 15px !important;
+    font-size: 1rem !important;
+    min-width: 250px !important;
+  }
+  #vidtop-content {
+    right: 30%;
+    transform: scale(1.6);
+    position: absolute;
+    width: 100%;
+  }
+}
+.visit-site-btn {
+  width: 100%;
+}
+.btn {
+  transition: all .3s ease-in-out !important;
+}
+.btn:hover {
+  -webkit-transform: scale(1.05) ;
+  -moz-transform: scale(1.05) ;
+  -ms-transform: scale(1.05) ;
+  -o-transform: scale(1.05) ;
+  transform: scale(1.05) ;
+}
+
+
+
 

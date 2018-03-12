@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require tinymce-jquery
 //= require popper
 //= require bootstrap-sprockets
 //= require turbolinks

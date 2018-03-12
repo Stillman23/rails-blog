@@ -3565,8 +3565,11 @@ p.text-center{
   left: 0;
   z-index: 3 !important; 
   max-width: 100%;
-  height: 100%;
+  height: auto;
+  text-align: center;
   overflow: hidden;
+  object-fit: contain;
+ 
 }
 .tv .screen {
  
@@ -3659,12 +3662,12 @@ p.text-center{
   #vidtop-content {
     right: 30%;
     transform: scale(1.6);
-    position: absolute;
+   
     width: 100%;
   }
 }
 .visit-site-btn {
-  width: 100%;
+  max-width: 100%;
 }
 .btn {
   transition: all .3s ease-in-out !important;
@@ -3675,6 +3678,10 @@ p.text-center{
   -ms-transform: scale(1.05) ;
   -o-transform: scale(1.05) ;
   transform: scale(1.05) ;
+}
+
+#player{
+  max-width: 100%;
 }
 
 

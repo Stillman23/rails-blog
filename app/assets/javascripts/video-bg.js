@@ -15,10 +15,10 @@ var tv,
         iv_load_policy: 3
     };
 var vid = [
-        {'videoId': '2hrG4lIyv2I', 'suggestedQuality': 'hd1080p'},
-        {'videoId': 'J0U0TqWUjFQ', 'startSeconds': 82, 'endSeconds': 112, 'suggestedQuality': 'hd720p60'},
-        {'videoId': 'J0U0TqWUjFQ', 'startSeconds': 235, 'endSeconds': 269, 'suggestedQuality': 'hd720p60'},
-        {'videoId': 'J0U0TqWUjFQ', 'startSeconds': 380, 'endSeconds': 425, 'suggestedQuality': 'hd720p60'}
+        {'videoId': 'cusNHBJnR9c'},
+        {'videoId': 'cusNHBJnR9c'},
+        {'videoId': 'cusNHBJnR9c'},
+        {'videoId': 'cusNHBJnR9c'}
     ],
     randomVid = Math.floor(Math.random() * vid.length),
     currVid = randomVid;

@@ -109,6 +109,7 @@ Author:             Jitu Chauhan
     color: #4d4d4d;
     background: #fff;
     position: absolute;
+    width: -webkit-fill-available;
    
   }
   
@@ -3559,12 +3560,10 @@ p.text-center{
 
 
 .tv {
- 
-  display:inline-block;
   top: 0;
   left: 0;
-  z-index: 3 !important; 
-  max-width: 100%;
+  z-index: -1;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
@@ -3676,7 +3675,5 @@ p.text-center{
   -o-transform: scale(1.05) ;
   transform: scale(1.05) ;
 }
-
-
 
 
